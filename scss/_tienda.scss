@@ -1,0 +1,24 @@
+/***************
+Section de Tienda
+******************/
+
+.card {
+    height: 545px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin-left: 70px;
+    text-align: center;
+    transition: all 0.20s; 
+}
+.card-text  {
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 300;
+    
+}
+
+/***************
+Fin de Tienda
+****************/
+@import"_color.scss";

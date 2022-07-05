@@ -1,6 +1,16 @@
-/* IMPORT */ /*******************
+/* IMPORT */ /*********************
    Section index
- ******************/
+ ********************/
+.div-purple {
+  background-color: #5f37b1;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 0.8rem 0;
+}
+.div-purple h1 {
+  font-size: 35px;
+}
+
 .menuFlex {
   background-color: #382c68;
   align-items: center;
@@ -40,8 +50,27 @@ input .me-2 {
 /************************************
    Section sobre nosotros del index 
  ************************************/
+.sobre-nosotros {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sobre-nosotros-texto {
+  width: 50%;
+  text-align: justify;
+  margin: 80px;
+  line-height: 25px;
+}
+
+.sobre-nosotros-texto-title {
+  padding-bottom: 50px;
+  font-size: 10px;
+}
+
 #homeNosotros-texto {
-  width: 85%;
+  width: 86%;
   justify-items: center;
   margin: 10% 3% 5% 10%;
   font-size: 120%;
@@ -52,10 +81,11 @@ input .me-2 {
 .homeTexto {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 40px;
-  color: rgb(255, 255, 255);
+  font-size: 45px;
+  font-weight: bold;
+  color: #35008b;
   justify-content: center;
-  margin-bottom: 1px;
+  margin-top: 10px;
 }
 
 /****************************************
@@ -106,16 +136,16 @@ img .homeProductosimg {
   transform: scale(0.9, 0.9);
 }
 
-.botonEstilo {
+.botonEstilo, .boton-estilo3, .boton-estilo2, .boton-estilo1, .botonEstilo3, .botonEstilo2, .botonEstilo1 {
   width: 9rem;
   color: rgb(255, 255, 255);
-  font-family: "Poppins", sans-serif;
+  font-family: sans-serif;
   text-decoration: none;
   background-color: #382c68;
   padding: 0.3rem;
   border-radius: 0.5rem;
   display: inline-block;
-  transition: 0.8s;
+  transition: 0.7s;
   box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.11);
   position: relative;
   left: 50%;
@@ -123,10 +153,34 @@ img .homeProductosimg {
   text-align: center;
   margin-bottom: 35px;
 }
-.botonEstilo .botonEstilo:hover {
-  background-color: #beabeb;
+.botonEstilo .botonEstilo:hover, .boton-estilo3 .botonEstilo:hover, .botonEstilo .boton-estilo3:hover, .boton-estilo3 .boton-estilo3:hover, .boton-estilo2 .botonEstilo:hover, .boton-estilo2 .boton-estilo3:hover, .botonEstilo .boton-estilo2:hover, .boton-estilo3 .boton-estilo2:hover, .boton-estilo2 .boton-estilo2:hover, .boton-estilo1 .botonEstilo:hover, .boton-estilo1 .boton-estilo3:hover, .boton-estilo1 .boton-estilo2:hover, .botonEstilo .boton-estilo1:hover, .boton-estilo3 .boton-estilo1:hover, .boton-estilo2 .boton-estilo1:hover, .boton-estilo1 .boton-estilo1:hover, .botonEstilo3 .botonEstilo:hover, .botonEstilo3 .boton-estilo3:hover, .botonEstilo3 .boton-estilo2:hover, .botonEstilo3 .boton-estilo1:hover, .botonEstilo .botonEstilo3:hover, .boton-estilo3 .botonEstilo3:hover, .boton-estilo2 .botonEstilo3:hover, .boton-estilo1 .botonEstilo3:hover, .botonEstilo3 .botonEstilo3:hover, .botonEstilo2 .botonEstilo:hover, .botonEstilo2 .boton-estilo3:hover, .botonEstilo2 .boton-estilo2:hover, .botonEstilo2 .boton-estilo1:hover, .botonEstilo2 .botonEstilo3:hover, .botonEstilo .botonEstilo2:hover, .boton-estilo3 .botonEstilo2:hover, .boton-estilo2 .botonEstilo2:hover, .boton-estilo1 .botonEstilo2:hover, .botonEstilo3 .botonEstilo2:hover, .botonEstilo2 .botonEstilo2:hover, .botonEstilo1 .botonEstilo:hover, .botonEstilo1 .boton-estilo3:hover, .botonEstilo1 .boton-estilo2:hover, .botonEstilo1 .boton-estilo1:hover, .botonEstilo1 .botonEstilo3:hover, .botonEstilo1 .botonEstilo2:hover, .botonEstilo .botonEstilo1:hover, .boton-estilo3 .botonEstilo1:hover, .boton-estilo2 .botonEstilo1:hover, .boton-estilo1 .botonEstilo1:hover, .botonEstilo3 .botonEstilo1:hover, .botonEstilo2 .botonEstilo1:hover, .botonEstilo1 .botonEstilo1:hover {
+  background-color: #d9cdd9;
 }
 
+/****************
+EXTEND  BOTONES
+****************/
+.botonEstilo1 {
+  background-color: rgb(236, 177, 217);
+  position: absolute;
+  border-radius: 0.8rem;
+}
+
+.botonEstilo2 {
+  background-color: rgb(228, 110, 190);
+  position: absolute;
+  border-radius: 1rem;
+}
+
+.botonEstilo3 {
+  background-color: rgb(226, 87, 182);
+  position: absolute;
+  border-radius: 1.2rem;
+}
+
+/****************
+MIXIN 
+****************/
 /**************************
 Fin de INDEX
 ***************************/
@@ -151,8 +205,15 @@ Fin de footer
 /***************
 Section de Tienda
 ******************/
+#productos {
+  font-size: 45px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #35008b;
+}
+
 .card {
-  height: 545px;
+  height: 565px;
   border-radius: 8px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
   overflow: hidden;
@@ -161,10 +222,68 @@ Section de Tienda
   transition: all 0.2s;
 }
 
+div .card-body h2 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
 .card-text {
   text-align: justify;
   font-size: 15px;
-  font-weight: 300;
+}
+
+.div-estrellas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.estrellas {
+  display: inline-block;
+  background-size: cover;
+  width: auto;
+  height: 1rem;
+  margin-right: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.corazon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 1rem;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.corazon:hover svg {
+  fill: #c72727;
+}
+
+/****************
+      MAPAS 
+****************/
+/****************
+EACH con Mapas
+****************/
+.boton-estilo1 {
+  background-color: rgb(238, 142, 207);
+  position: absolute;
+  border-radius: 1.3rem;
+}
+
+.boton-estilo2 {
+  background-color: rgb(224, 82, 179);
+  position: absolute;
+  border-radius: 1.3rem;
+}
+
+.boton-estilo3 {
+  background-color: rgb(207, 37, 153);
+  position: absolute;
+  border-radius: 1.3rem;
 }
 
 /***************
@@ -289,7 +408,7 @@ ul {
 }
 
 .contact-form form button {
-  background: #c165e6;
+  background: #6500c4;
   border: 0;
   text-transform: uppercase;
   padding: 1em;
@@ -297,7 +416,7 @@ ul {
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-  background: #c165e6;
+  background: #6500c4;
   color: rgb(255, 255, 255);
   transition: background-color 1s ease-out;
   outline: 0;
@@ -340,12 +459,23 @@ fin de contacto
     font-size: medium;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 350px) and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+    z-index: 9999;
+  }
+  .homeServicios-texto h2 {
+    margin: 2px 5% 1% 1%;
+    text-align: justify;
+    z-index: 9999;
+    color: #382c68;
+  }
   .card-text {
     font-size: small;
   }
   .homeP {
     font-size: medium;
+    text-align: justify;
   }
   .homeImg {
     width: 40%;
@@ -381,9 +511,11 @@ Estilos generales
 body {
   width: 100%;
   height: 100vh; /*para que sea en toda la pagina*/
-  background-color: #beabeb;
+  background: #d9cdd9;
   align-items: center;
   padding-bottom: 40px;
+  overflow-x: hidden;
+  z-index: 9999;
 }
 
 /*# sourceMappingURL=destino.css.map */

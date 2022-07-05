@@ -24,12 +24,25 @@
           font-size: medium;
       }
   }
-@media (min-width: 320px) and (max-width: 767px){
+@media (min-width: 350px) and (max-width: 767px){
+    body{
+        overflow-x: hidden;
+        z-index: 9999;
+    }
+    .homeServicios-texto {
+        h2 {
+            margin: 2px 5% 1% 1%;
+            text-align: justify;
+            z-index: 9999;
+            color: $colorMenuFoo;
+        }
+    }
     .card-text{
         font-size: small;
     }
     .homeP {
         font-size: medium;
+        text-align: justify;
     }
     .homeImg{
       width: 40%;

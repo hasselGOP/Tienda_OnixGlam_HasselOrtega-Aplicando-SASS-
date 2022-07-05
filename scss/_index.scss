@@ -1,6 +1,17 @@
-/*******************
+/*********************
    Section index
- ******************/
+ ********************/
+ 
+ .div-purple {
+    background-color: $ColorMoradoDescuento;
+    color: $colorBlanco;
+    text-align: center;
+    padding: 0.8rem 0; 
+    h1{
+        font-size: 35px;
+    }
+}
+  
 .menuFlex{
     background-color:$colorMenuFoo;
     align-items: center;
@@ -38,8 +49,24 @@ input {
 /************************************
    Section sobre nosotros del index 
  ************************************/
+.sobre-nosotros{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.sobre-nosotros-texto{
+    width: 50%;
+    text-align: justify ;
+    margin:80px;
+    line-height: 25px;
+}
+.sobre-nosotros-texto-title{
+    padding-bottom: 50px;
+    font-size: 10px;
+}
 #homeNosotros-texto {
-    width: 85%;
+    width: 86%;
     justify-items: center;
     margin: 10% 3% 5% 10%;
     font-size: 120%;
@@ -49,10 +76,11 @@ input {
 .homeTexto  {
     display: flex;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    color: $colorBlanco;
+    font-size: 45px;
+    font-weight: bold;
+    color: $colorPorqueN;
     justify-content:center ;
-    margin-bottom: 1px;
+    margin-top: 10px;
 }
 /****************************************
 Section de PORQUE COMPRAR CON NOSOTROS
@@ -103,13 +131,13 @@ Section de productos destacados
 .botonEstilo{
     width: 9rem;
     color: $colorBlanco;
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
     text-decoration: none;
     background-color: $colorMenuFoo;
     padding: 0.3rem;
     border-radius: 0.5rem;
     display: inline-block;
-    transition: 0.8s;
+    transition: 0.7s;
     box-shadow: 0px 4px 4px $ColorBoxShadow2;
     position: relative;
     left: 50%;
@@ -120,10 +148,41 @@ Section de productos destacados
             background-color: $colorBody;
         }  
 }
+/****************
+EXTEND  BOTONES
+****************/
+.botonEstilo1{
+    @extend .botonEstilo;
+    background-color:  rgb(236, 177, 217);
+    position:absolute;
+    border-radius: 0.8rem;
+}
+.botonEstilo2{
+    @extend .botonEstilo;
+    background-color: $ColorBotonesRosa2;
+    position:absolute;
+    border-radius: 1rem;
+}
+.botonEstilo3{
+    @extend .botonEstilo;
+    background-color: $ColorBotonesRosa3;
+    position:absolute;
+    border-radius: 1.2rem;
+}
+/****************
+MIXIN 
+****************/
+
+@mixin estetica($color, $alinear, $letra) 
+    {
+    color:$color;
+    align-items: $alinear;
+    font-family: $letra; 
+}
+
 /**************************
 Fin de INDEX
 ***************************/
-
 
 /**********************
 Section footer 

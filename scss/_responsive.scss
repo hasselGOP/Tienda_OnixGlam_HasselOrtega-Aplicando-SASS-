@@ -24,46 +24,72 @@
           font-size: medium;
       }
   }
-@media (min-width: 350px) and (max-width: 767px){
+  @media (min-width: 717px) and (max-width: 767px){
+    .card {
+        height: 890px;;
+    }
+  }
+  @media (min-width: 484px) and (max-width: 716px){
+    .card {
+        height: 780px;;
+    }
+  }
+  @media (min-width: 405px) and (max-width: 483px){
+    .card {
+        height: 720px;;
+    }
+    .div-purple{
+        h1{
+            font-size: 15px;
+        }
+    }
+    .imagenCesta{ 
+        display: block;
+        margin:auto;  
+        width: 75%;
+        height: auto;
+    }
+    .pCarrito{
+        font-size: 30px;
+        margin-top: 15px;
+      }
+      .pSesion{
+        margin-top: 15px;
+        font-size: 16px;
+        
+      }
+}
+@media (min-width: 320px) and (max-width: 405px){
     body{
         overflow-x: hidden;
         z-index: 9999;
+        margin: auto;
     }
-    .homeServicios-texto {
-        h2 {
-            margin: 2px 5% 1% 1%;
-            text-align: justify;
-            z-index: 9999;
-            color: $colorMenuFoo;
+
+    .div-purple{
+        h1{
+            font-size: 20px;
         }
     }
-    .card-text{
-        font-size: small;
+    .homeTexto{
+        text-align: center;
     }
-    .homeP {
-        font-size: medium;
-        text-align: justify;
-    }
-    .homeImg{
-      width: 40%;
-      height: auto;
-      margin: auto;
+  /* Clase de carrito */
+  .imagenCesta{ 
+    display: block;
+    margin:auto;  
+    width: 75%;
+    height: auto;
+}
+  .pCarrito{
+    font-size: 20px;
   }
-  .imagenNosotros{
-      width: 50%;
-      height: auto;
-      margin: auto; 
+  .pSesion{
+    font-size: 10px;
+    
   }
-  .imagenCesta{ /* Clase de carrito */
-      margin-left: 0px ;
-      margin-bottom: 50px;  
-      width: 90%;
-  }
-  .homeProductosimg {
-      width: 65%;
-      height: auto;
-      margin: auto;
-  } 
+/* Clase de tienda */
+
 }
 /*******************
      FIN DE RESPONSIVE 

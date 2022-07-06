@@ -1,17 +1,38 @@
 /*********************
    Section index
  ********************/
- 
+
  .div-purple {
     background-color: $ColorMoradoDescuento;
     color: $colorBlanco;
     text-align: center;
     padding: 0.8rem 0; 
     h1{
-        font-size: 35px;
+       
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 2rem;
+        margin: 0 auto;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-right: 0.15em solid #18bdec;
+        animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+
     }
 }
-  
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
 .menuFlex{
     background-color:$colorMenuFoo;
     align-items: center;
@@ -82,6 +103,11 @@ input {
     justify-content:center ;
     margin-top: 10px;
 }
+.img-thumbnail {
+    display: block;
+    margin:auto;
+    max-width: 80%;
+}
 /****************************************
 Section de PORQUE COMPRAR CON NOSOTROS
 ****************************************/
@@ -105,6 +131,10 @@ Section de PORQUE COMPRAR CON NOSOTROS
         color: $colorPorqueN;
     }
 }
+.img-fluid{
+    display: block;
+    margin: auto;
+}
 /*******************************
 Section de productos destacados
 ********************************/
@@ -127,6 +157,9 @@ Section de productos destacados
     img:hover {
         transform: scale(0.9, 0.9);
     }
+}
+.card{
+   margin-left: 1px !important;
 }
 .botonEstilo{
     width: 9rem;
